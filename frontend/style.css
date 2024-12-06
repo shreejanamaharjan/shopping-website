@@ -67,12 +67,36 @@ nav a {
     margin-left: 1.5%;
     margin-right: 1.5%;
     padding-right: 5%;
+    z-index: 2;
+}
+
+.hero .white {
+    width: 226px;
+    height: 60px;
+    position: absolute;
+    top: 9.5%;
+    left: 12%;
+    background-color: white;
+    z-index: 4;
+    transform: rotate(-4deg);
+}
+
+.hero .yellow {
+    width: 245px;
+    height: 60px;
+    position: absolute;
+    top: 39%;
+    left: 12%;
+    background-color: #EBD96B;
+    z-index: 4;
+    transform: rotate(-4deg);
 }
 
 .hero .intro {
     width: 30%;
     margin-top: 4%;
     height: 100%;
+
 }
 
 .hero span {
@@ -81,6 +105,8 @@ nav a {
     font-family: 'Poppins';
     line-height: 65px;
     margin-bottom: 5%;
+    position: relative;
+    z-index: 6;
 }
 
 .hero p {
@@ -103,6 +129,11 @@ nav a {
 
 .brand {
     background-color: #EBD96B;
+    margin: 5% 0;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
 }
 
 .new-arrivals {
@@ -153,16 +184,30 @@ nav a {
     background-color: #EFD24B;
     display: flex;
     margin-top: 5%;
+    z-index: 1;
 }
 
 .advertise .intro {
     width: 30%;
     margin: 10% 10% 0 auto;
+
 }
 
 .advertise span {
     font-size: 68px;
     font-weight: 900;
+    z-index: 8;
+    position: relative;
+}
+
+.advertise .white {
+    width: 300px;
+    height: 75px;
+    position: absolute;
+    right: 17%;
+    background-color: white;
+    z-index: 4;
+    transform: rotate(-4deg);
 }
 
 .advertise p {
@@ -281,7 +326,6 @@ nav a {
 }
 
 .contact .intro {
-    border: 1px solid red;
     width: 40%;
     margin: auto;
     padding: 5% 0;
@@ -301,4 +345,72 @@ nav a {
     font-size: 20px;
     font-weight: 400;
     margin: 10% 0;
+}
+
+.email-input {
+    background-color: white;
+    width: 60%;
+    padding: 2%;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+}
+
+.email-input button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 2% 5%;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.email-input input {
+    border: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
+
+footer span {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Poppins';
+    line-height: 32px;
+    margin-bottom: 5%;
+}
+
+.description {
+    width: 20%;
+}
+
+.description p {
+    margin: 8% 0;
+    color: #8E8E8E;
+}
+
+.links {
+    display: flex;
+    margin-left: auto;
+    gap: 15%;
+    width: 50%;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+li {
+    color: #8E8E8E;
+    margin: 10% 0;
+}
+
+li span {
+    color: white;
+    font-size: 18px;
 }
