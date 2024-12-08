@@ -122,27 +122,41 @@ nav a {
 
 
 
-.hero .color-bg {
-    background-color: rgb(218, 163, 163);
-    width: 50%;
-    transform: rotate(-4deg);
-
-}
 
 .hero .rotate-bg {
-    transform: rotate(40deg);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
 }
 
-.hero .yellow {
-    width: 245px;
-    height: 60px;
+.hero .white::before {
+    content: "";
     position: absolute;
-    top: 39%;
-    left: 12%;
-    background-color: #EBD96B;
-    z-index: 4;
+    top: 0;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    width: 110%;
+    background-color: white;
     transform: rotate(-4deg);
+    z-index: -1;
+    padding: 10px;
 }
+
+.hero .yellow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    width: 110%;
+    background-color: var(--primary-color);
+    transform: rotate(-4deg);
+    z-index: -1;
+    padding: 10px;
+}
+
 
 .hero .intro {
     width: 35%;
@@ -162,12 +176,14 @@ nav a {
     font-size: 450%;
     font-weight: 900;
     line-height: 120%;
+    transition: all 3s;
 }
 
 .hero .intro-para {
     font-size: 120%;
     font-weight: 400;
     margin-top: 5%;
+    transition: all 3s;
 }
 
 .hero button {
@@ -514,6 +530,182 @@ li span {
 
     .menu img {
         display: block;
+    }
+
+}
+
+@media only screen and (max-width: 1170px) {
+
+    .hero .slogan {
+        font-size: 350%;
+        font-weight: 900;
+        line-height: 120%;
+        transition: all 2s;
+    }
+
+    .hero .intro-para {
+        font-size: 80%;
+        font-weight: 400;
+        margin-top: 5%;
+        transition: all 2s;
+    }
+
+    .hero button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: 100%;
+        border: none;
+        padding: 3%;
+        margin-top: 10% 0;
+        /* transition: all s; */
+    }
+}
+
+@media only screen and (max-width: 935px) {
+
+    .hero button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: 80%;
+        border: none;
+        padding: 3%;
+        margin-top: 10% 0;
+        /* transition: all 1s; */
+    }
+
+}
+
+@media only screen and (max-width: 865px) {
+
+    .hero .slogan {
+        font-size: 250%;
+        font-weight: 900;
+        line-height: 120%;
+        transition: all 2s;
+    }
+
+    .hero .intro-para {
+        font-size: 60%;
+        font-weight: 400;
+        margin-top: 5%;
+        transition: all 2s;
+    }
+
+    .hero button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: 60%;
+        border: none;
+        padding: 3%;
+        margin-top: 10% 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero .slogan {
+        font-size: 200%;
+        font-weight: 900;
+        line-height: 120%;
+        transition: all 2s;
+    }
+
+    .hero .intro-para {
+        font-size: 50%;
+        font-weight: 400;
+        margin-top: 5%;
+        transition: all 2s;
+    }
+
+    .hero button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: 50%;
+        border: none;
+        padding: 3%;
+        margin-top: 10% 0;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .hero .slogan {
+        font-size: 150%;
+        font-weight: 900;
+        line-height: 120%;
+        transition: all 2s;
+    }
+
+    .hero .intro-para {
+        font-size: 40%;
+        font-weight: 400;
+        margin-top: 5%;
+        transition: all 2s;
+    }
+
+    .hero button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: 40%;
+        border: none;
+        padding: 3%;
+        margin-top: 10% 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .hero .slogan {
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 120%;
+        transition: all 3s;
+    }
+
+    .hero .intro-para {
+        font-size: 35%;
+        font-weight: 400;
+        margin-top: 5%;
+        transition: all 2s;
+    }
+
+    .hero button {
+        background-color: black;
+        color: white;
+        width: 30%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: 35%;
+        border: none;
+        padding: 3%;
+        margin-top: 10% 0;
+        transition: all 2s;
+    }
+
+    .hero img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
     }
 
 }
