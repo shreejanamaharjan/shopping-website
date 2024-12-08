@@ -50,6 +50,11 @@ header button {
 
 }
 
+.menu img {
+    display: none;
+
+}
+
 nav a {
     text-decoration: none;
     color: black;
@@ -67,6 +72,46 @@ nav a {
     margin-left: 25px;
 }
 
+.sidebar {
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    display: none;
+}
+
+.sidebar .navbar {
+    display: block;
+}
+
+.sidebar .sidebar-logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.sidebar .logo {
+    margin-top: 5%;
+}
+
+.sidebar a {
+    display: block;
+    margin: 5% 3%;
+    font-size: 160%;
+}
+
+.sidebar button {
+    width: 90%;
+    font-size: 160%;
+    padding: 3%;
+    height: 100%;
+    margin: 5% 0 0 5%;
+}
+
 .hero {
     border-radius: 59px;
     margin: 3%;
@@ -77,9 +122,15 @@ nav a {
 
 
 
-.hero .white-bg {
-    background-color: white;
-    height: 50px;
+.hero .color-bg {
+    background-color: rgb(218, 163, 163);
+    width: 50%;
+    transform: rotate(-4deg);
+
+}
+
+.hero .rotate-bg {
+    transform: rotate(40deg);
 }
 
 .hero .yellow {
@@ -98,6 +149,7 @@ nav a {
     margin: auto;
     height: 70%;
     margin-left: 10%;
+    margin-top: 3%;
 }
 
 .hero-image {
@@ -127,7 +179,7 @@ nav a {
     font-size: 120%;
     border: none;
     padding: 3%;
-    margin-top: 10%;
+    margin-top: 10% 0;
 }
 
 .hero img {
@@ -150,7 +202,7 @@ nav a {
 }
 
 .new-arrivals {
-    margin: 2% 0 2% 1.5%;
+    margin: 0 0 3% 3%;
 }
 
 .new-arrivals span {
@@ -196,20 +248,23 @@ nav a {
 .advertise {
     background-color: #EFD24B;
     display: flex;
-    margin-top: 5%;
-    z-index: 1;
+}
+
+.advertise-image {
+    width: 40%;
+    /* position: relative; */
+    margin: 3% 0 0 3%;
 }
 
 .advertise .intro {
-    width: 30%;
-    margin: 10% 10% 0 auto;
+    width: 35%;
+    margin: auto;
 
 }
 
 .advertise span {
-    font-size: 68px;
+    font-size: 80px;
     font-weight: 900;
-    z-index: 8;
     position: relative;
 }
 
@@ -224,40 +279,47 @@ nav a {
 }
 
 .advertise p {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
     margin: 5% 0 2% 0;
 }
 
-.advertise h4 {
-    font-size: 20px;
+.advertise h1 {
+    font-size: 23px;
     font-weight: 900;
-    margin-top: 2%;
+    margin-top: 15%;
 }
 
-.advertise h5 {
-    font-weight: 100;
+.advertise .intro h5 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: -3%;
 }
+
 
 .advertise button {
+    width: 140px;
+    height: 60px;
     background-color: black;
     color: white;
-    border: none;
-    padding: 3%;
-    margin-top: 10%;
     border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    margin-bottom: 3%;
 }
 
 .advertise img {
-    margin-top: 10%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
 
 .young-favourite {
-    margin: 2% 0 2% 1.5%;
+    margin: 3% 0 3% 3%;
 }
 
 .young-favourite span {
-    font-size: 35px;
+    font-size: 48px;
     font-weight: 900;
 }
 
@@ -297,22 +359,23 @@ nav a {
 }
 
 .download-voucher .intro {
-    width: 25%;
-    margin-top: 15%;
+    width: 35%;
+    margin: auto;
     height: 100%;
 }
 
 .download-voucher span {
-    font-size: 28px;
-    font-weight: bold;
-    /* font-family: 'Poppins'; */
-    line-height: 40px;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 80px;
     margin-bottom: 5%;
 }
 
 .download-voucher p {
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 600;
     margin: 10% 0;
+    color: var(--grey-color);
 }
 
 .download-voucher button {
@@ -323,9 +386,15 @@ nav a {
     margin-top: 10%;
 }
 
+.download-voucher .download {
+    width: 40%;
+    margin: 3% 0 3% auto;
+}
+
 .download-voucher .download img {
-    margin-top: 10%;
-    margin-left: 30%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
 
 .download-button {
@@ -340,6 +409,7 @@ nav a {
 
 .contact .intro {
     width: 40%;
+    line-height: 40px;
     margin: auto;
     padding: 5% 0;
     color: white;
@@ -347,7 +417,7 @@ nav a {
 }
 
 .contact span {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     /* font-family: 'Poppins'; */
     line-height: 32px;
@@ -355,7 +425,7 @@ nav a {
 }
 
 .contact p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     margin: 10% 0;
 }
@@ -367,6 +437,7 @@ nav a {
     border-radius: 5px;
     margin: auto;
     display: flex;
+
 }
 
 .email-input button {
@@ -374,12 +445,14 @@ nav a {
     color: white;
     border: none;
     padding: 2% 5%;
-    margin-left: auto;
     border-radius: 5px;
+    font-size: 16px;
+    margin-left: auto;
 }
 
 .email-input input {
     border: none;
+    font-size: 16px;
 }
 
 footer {
@@ -426,4 +499,21 @@ li {
 li span {
     color: white;
     font-size: 18px;
+}
+
+/* media query */
+@media only screen and (max-width: 1120px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu {
+        margin: 0 3% 0 auto;
+        transition: all 3s;
+    }
+
+    .menu img {
+        display: block;
+    }
+
 }

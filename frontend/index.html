@@ -14,11 +14,14 @@
 </head>
 
 <body>
+    <!-- heading section -->
     <header>
+        <!-- logo section -->
         <div class="logo">
             <img src="./images/logo.png" alt="logo" />
             <span>FASHION</span>
         </div>
+        <!-- navbar section -->
         <div class="navbar">
             <nav>
                 <a href="#">CATALOGUE</a>
@@ -27,13 +30,42 @@
                 <a href="#">LIFESTYLE</a>
             </nav>
             <button>SIGN UP</button>
+
+        </div>
+        <div class="menu">
+            <img src="./images/menu.png" alt="" onclick=showSidebar()>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo" />
+                    <span>FASHION</span>
+                </div>
+                <div class="menu">
+                    <img src="./images/close.png" alt="" onclick=closeSidebar()>
+                </div>
+            </div>
+            <!-- navbar section -->
+            <div class="navbar">
+                <nav>
+                    <a href="#">CATALOGUE</a>
+                    <a href="#">FASHION</a>
+                    <a href="#">FAVOURITE</a>
+                    <a href="#">LIFESTYLE</a>
+                </nav>
+                <button>SIGN UP</button>
+
+            </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="intro">
                 <div class="slogan">
-                    <span>LET'S <br>EXPLORE <br>UNIQUE <br>CLOTHES.</span>
+                    <div class="color-bg">
+                        <span class="rotate-bg">LET'S</span>
+                    </div>
+                    <span>EXPLORE <br>UNIQUE <br>CLOTHES.</span>
 
                 </div>
                 <p class="intro-para">Live for Influential ad Innovative fashion!</p>
@@ -86,15 +118,17 @@
         </section>
         <section class="advertise">
             <div class="advertise-image">
-                <img src="./images/advertise.png" alt="" width="600px" height="500px">
+                <img src="./images/advertise.png" alt="">
             </div>
             <div class="intro">
-                <div></div>
-                <span>PAYDAY <br>SALE NOW</span>
+                <span>PAYDAY SALE NOW</span>
                 <p>Spend minimal $100 get 30% off
                     voucher code for your next purchase</p>
-                <h4>1 June - 10 June 2021</h4>
+
+                <h1>1 June - 10 June 2021</h1>
                 <h5>*Terms & Conditions apply</h5>
+
+
                 <button>Shop Now</button>
             </div>
         </section>
@@ -192,6 +226,7 @@
         </div>
         <div></div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
