@@ -101,12 +101,12 @@ nav a {
 .sidebar a {
     display: block;
     margin: 5% 3%;
-    font-size: 160%;
+    font-size: 120%;
 }
 
 .sidebar button {
     width: 90%;
-    font-size: 160%;
+    font-size: 120%;
     padding: 3%;
     height: 100%;
     margin: 5% 0 0 5%;
@@ -1299,12 +1299,20 @@ li span {
 
     .email-input {
         background-color: white;
-        width: 130%;
+        width: 80%;
         padding: 2%;
         border-radius: 5px;
         margin: auto;
         display: flex;
 
+    }
+
+    .email-input input {
+        font-size: 12px;
+    }
+
+    .email-input button {
+        font-size: 12px;
     }
 }
 
@@ -1414,13 +1422,13 @@ li span {
         color: var(--grey-color);
     }
 
-    .email-input {
-        background-color: white;
-        width: 150%;
-        padding: 2%;
-        border-radius: 5px;
-        /* margin: auto; */
-        display: flex;
+    .email-input input {
+        font-size: 8px;
+
+    }
+
+    .email-input button {
+        font-size: 8px;
 
     }
 }
