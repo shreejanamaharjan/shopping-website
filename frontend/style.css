@@ -123,13 +123,13 @@ nav a {
 
 
 
-.hero .rotate-bg {
+.rotate-bg {
     position: relative;
     display: inline-block;
     z-index: 1;
 }
 
-.hero .white::before {
+.white::before {
     content: "";
     position: absolute;
     top: 0;
@@ -143,7 +143,7 @@ nav a {
     padding: 10px;
 }
 
-.hero .yellow::before {
+.yellow::before {
     content: "";
     position: absolute;
     top: 0;
@@ -173,14 +173,14 @@ nav a {
 }
 
 .hero .slogan {
-    font-size: 450%;
+    font-size: 550%;
     font-weight: 900;
     line-height: 120%;
     transition: all 3s;
 }
 
 .hero .intro-para {
-    font-size: 120%;
+    font-size: 140%;
     font-weight: 400;
     margin-top: 5%;
     transition: all 3s;
@@ -189,10 +189,10 @@ nav a {
 .hero button {
     background-color: black;
     color: white;
-    width: 30%;
+    width: 40%;
     height: 10%;
     border-radius: 10px;
-    font-size: 120%;
+    font-size: 140%;
     border: none;
     padding: 3%;
     margin-top: 10% 0;
@@ -209,45 +209,62 @@ nav a {
     margin: 0 0 3% 0;
     padding: 5% 0;
     display: flex;
-    justify-content: center;
-    gap: 10%;
+    justify-content: left;
+    scrollbar-width: none;
+
 }
 
 .brand img {
-    width: 6%;
+    width: 170px;
+    object-fit: contain;
+    display: block;
+    margin: 0 4%;
+
 }
 
 .new-arrivals {
-    margin: 0 0 3% 3%;
+    margin: 5% 0 3% 3%;
+
 }
 
 .new-arrivals span {
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 3%;
 }
 
 .new-arrivals-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    overflow-x: auto;
     gap: 5%;
+    scrollbar-width: none;
 }
 
-.Arrivals-container {
+.arrivals-container {
     margin-top: 3%;
 }
 
-.arrivals-intro {
-    margin: 1% 0 1% 0;
+.arrivals-container img {
+    width: 525px;
 }
 
+/* .arrivals-intro {
+    margin: 1% 0 1% 0;
+} */
+
 .arrivals-intro span {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 900;
 }
+
+
 
 .arrivals-intro p {
     margin-top: 3%;
     color: #7F7F7F;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .intro-container {
@@ -259,6 +276,7 @@ nav a {
 
 .intro-container img {
     margin-left: auto;
+    width: 35px;
 }
 
 .advertise {
@@ -267,60 +285,53 @@ nav a {
 }
 
 .advertise-image {
-    width: 40%;
+    width: 50%;
     /* position: relative; */
     margin: 3% 0 0 3%;
 }
 
 .advertise .intro {
     width: 35%;
-    margin: auto;
+    margin: 5% 5% 5% auto;
 
 }
 
 .advertise span {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 900;
     position: relative;
 }
 
-.advertise .white {
-    width: 300px;
-    height: 75px;
-    position: absolute;
-    right: 17%;
-    background-color: white;
-    z-index: 4;
-    transform: rotate(-4deg);
-}
+
 
 .advertise p {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     margin: 5% 0 2% 0;
 }
 
 .advertise h1 {
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 900;
     margin-top: 15%;
 }
 
 .advertise .intro h5 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: -3%;
 }
 
 
 .advertise button {
-    width: 140px;
-    height: 60px;
+    width: 250px;
+    height: 80px;
     background-color: black;
     color: white;
     border-radius: 5px;
     border: none;
-    font-size: 22px;
+    font-size: 30px;
+    margin-top: 5%;
     margin-bottom: 3%;
 }
 
@@ -331,7 +342,7 @@ nav a {
 }
 
 .young-favourite {
-    margin: 3% 0 3% 3%;
+    margin: 5% 0 3% 3%;
 }
 
 .young-favourite span {
@@ -341,20 +352,30 @@ nav a {
 
 .young-favourite-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    overflow-x: auto;
     gap: 5%;
+    scrollbar-width: none;
 }
 
 .favourite-container {
     margin-top: 3%;
 }
 
-.arrivals-intro {
-    margin: 1% 0 1% 0;
+.favourite-container img {
+    width: 850px;
 }
 
+.favourite-container .intro-container img {
+    width: 45px;
+}
+
+/* .arrivals-intro {
+    margin: 1% 0 1% 0;
+} */
+
 .favourite-intro span {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 900;
 
 }
@@ -362,6 +383,8 @@ nav a {
 .favourite-intro p {
     margin-top: 3%;
     color: #7F7F7F;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .download-voucher {
@@ -375,7 +398,7 @@ nav a {
 }
 
 .download-voucher .intro {
-    width: 35%;
+    width: 40%;
     margin: auto;
     height: 100%;
 }
@@ -469,6 +492,7 @@ nav a {
 .email-input input {
     border: none;
     font-size: 16px;
+    width: 80%;
 }
 
 footer {
@@ -525,16 +549,154 @@ li span {
 
     .menu {
         margin: 0 3% 0 auto;
-        transition: all 3s;
+        transition: all 2s;
     }
 
     .menu img {
         display: block;
     }
 
+    .brand img {
+        width: 140px;
+    }
+
+    .contact span {
+        font-size: 20px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        line-height: 28px;
+        margin-bottom: 5%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10% 0;
+    }
+
+    .email-input {
+        background-color: white;
+        width: 70%;
+        padding: 2%;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+
+    }
+
+    .links {
+        display: flex;
+        margin-left: auto;
+        gap: 10%;
+        width: 50%;
+    }
+
+    footer span {
+        font-size: 22px;
+        font-weight: 900;
+        /* font-family: 'Poppins'; */
+        line-height: 32px;
+        margin-bottom: 5%;
+    }
+
+
+    li span {
+        color: white;
+        font-size: 12px;
+    }
+
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 2000px) {
+    .brand {
+        overflow-x: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1820px) {
+    .download-voucher span {
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 65px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .advertise span {
+        font-size: 70px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 26px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 24px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: -3%;
+        transition: all 2s;
+    }
+
+
+    .advertise button {
+        width: 250px;
+        height: 80px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 24px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .download-voucher span {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 60px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 1171px) {
 
     .hero .slogan {
         font-size: 350%;
@@ -562,6 +724,69 @@ li span {
         margin-top: 10% 0;
         /* transition: all s; */
     }
+
+    .advertise span {
+        font-size: 60px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 22px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: -3%;
+        transition: all 2s;
+    }
+
+
+    .advertise button {
+        width: 200px;
+        height: 60px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 22px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .favourite-container img {
+        width: 800px;
+    }
+
+    .download-voucher span {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 50px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
 }
 
 @media only screen and (max-width: 935px) {
@@ -578,6 +803,183 @@ li span {
         margin-top: 10% 0;
         /* transition: all 1s; */
     }
+
+    .brand img {
+        width: 100px;
+        transition: all 2s;
+    }
+
+    .new-arrivals span {
+        font-size: 40px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
+
+    .arrivals-container img {
+        width: 500px;
+    }
+
+    .arrivals-intro span {
+        font-size: 27px;
+        font-weight: 900;
+    }
+
+    .arrivals-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 16px;
+    }
+
+
+    .intro-container img {
+        margin-left: auto;
+        width: 25px;
+    }
+
+    .advertise span {
+        font-size: 50px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 16px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+
+    .advertise button {
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .young-favourite span {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .favourite-intro span {
+        font-size: 16px;
+        font-weight: 900;
+
+    }
+
+    .favourite-container img {
+        width: 700px;
+    }
+
+    .download-voucher {
+        margin-bottom: 5%;
+    }
+
+    .download-voucher span {
+        font-size: 33px;
+        font-weight: 900;
+        line-height: 40px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+    .download-voucher .download {
+        display: none;
+    }
+
+    .email-input {
+        background-color: white;
+        width: 80%;
+        padding: 2%;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+
+    }
+
+
+    .email-input input {
+        border: none;
+        font-size: 16px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: block;
+
+    }
+
+    footer span {
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 0;
+        margin-bottom: 0;
+    }
+
+    .description {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .description p {
+        margin: 1.5% 0;
+        color: #8E8E8E;
+        font-size: 12px;
+    }
+
+    .links {
+        display: block;
+        /* margin-left: -7%; */
+        gap: 0;
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .links ul li {
+        list-style: none;
+    }
+
+    li {
+        color: #8E8E8E;
+        margin: 1.5% 0;
+    }
+
+    li span {
+        color: white;
+        font-size: 16px;
+    }
+
+
 
 }
 
@@ -609,6 +1011,169 @@ li span {
         margin-top: 10% 0;
     }
 
+    .brand img {
+        width: 100px;
+        transition: all 2s;
+    }
+
+    .new-arrivals span {
+        font-size: 36px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
+
+    .arrivals-container img {
+        width: 400px;
+    }
+
+    .arrivals-intro span {
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .arrivals-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 14px;
+    }
+
+
+    .intro-container img {
+        margin-left: auto;
+        width: 25px;
+    }
+
+    .advertise span {
+        font-size: 38px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 16px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+
+    .advertise button {
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .young-favourite span {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    .favourite-intro span {
+        font-size: 16px;
+        font-weight: 900;
+
+    }
+
+    .favourite-container img {
+        width: 650px;
+    }
+
+    .download-voucher span {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 35px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+
+    .contact span {
+        font-size: 18px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        line-height: 24px;
+        margin-bottom: 5%;
+    }
+
+    .contact p {
+        font-size: 12px;
+        font-weight: 400;
+        margin: 10% 0;
+    }
+
+    .email-input {
+        background-color: white;
+        width: 100%;
+        padding: 2%;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+    .download-voucher span {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 35px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+    .contact span {
+        font-size: 16px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        line-height: 20px;
+        margin-bottom: 5%;
+    }
+
+    .contact p {
+        font-size: 10px;
+        font-weight: 400;
+        margin: 10% 0;
+    }
+
+    .email-input {
+        background-color: white;
+        width: 120%;
+        padding: 2%;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+
+    }
 
 }
 
@@ -640,6 +1205,107 @@ li span {
         margin-top: 10% 0;
     }
 
+    .new-arrivals span {
+        font-size: 34px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
+
+    .advertise span {
+        font-size: 33px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 14px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: -3%;
+        transition: all 2s;
+    }
+
+    .advertise button {
+        width: 100px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .young-favourite span {
+        font-size: 34px;
+        font-weight: 900;
+    }
+
+    .favourite-intro span {
+        font-size: 16px;
+        font-weight: 900;
+
+    }
+
+    .favourite-container img {
+        width: 600px;
+    }
+
+    .download-voucher span {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 30px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 12px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+    .contact span {
+        font-size: 12px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        line-height: 14px;
+        margin-bottom: 5%;
+    }
+
+    .contact p {
+        font-size: 8px;
+        font-weight: 400;
+        margin: 10% 0;
+    }
+
+    .email-input {
+        background-color: white;
+        width: 130%;
+        padding: 2%;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -670,7 +1336,93 @@ li span {
         margin-top: 10% 0;
     }
 
+    .new-arrivals span {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
 
+    .advertise span {
+        font-size: 27px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 10px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 14px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: -3%;
+        transition: all 2s;
+    }
+
+    .advertise button {
+        width: 100px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .young-favourite span {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .favourite-intro span {
+        font-size: 16px;
+        font-weight: 900;
+
+    }
+
+    .favourite-container img {
+        width: 635px;
+    }
+
+    .download-voucher span {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 15px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 10px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
+    }
+
+    .email-input {
+        background-color: white;
+        width: 150%;
+        padding: 2%;
+        border-radius: 5px;
+        /* margin: auto; */
+        display: flex;
+
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -706,6 +1458,116 @@ li span {
         object-fit: fill;
         width: 100%;
         height: 100%;
+    }
+
+    .brand img {
+        width: 100px;
+        transition: all 2s;
+    }
+
+    .new-arrivals span {
+        font-size: 28px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
+
+    .new-arrivals span {
+        font-size: 27px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
+
+    .arrivals-container img {
+        width: 300px;
+    }
+
+    .arrivals-intro span {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .arrivals-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 16px;
+    }
+
+
+    .intro-container img {
+        margin-left: auto;
+        width: 20px;
+    }
+
+    .advertise span {
+        font-size: 25px;
+        font-weight: 900;
+        position: relative;
+        transition: all 2s;
+    }
+
+
+
+    .advertise p {
+        font-size: 9px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+        transition: all 2s;
+    }
+
+    .advertise h1 {
+        font-size: 12px;
+        font-weight: 900;
+        margin-top: 15%;
+        transition: all 2s;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 8px;
+        margin-top: -3%;
+        transition: all 2s;
+    }
+
+    .advertise button {
+        width: 80px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 12px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        transition: all 2s;
+    }
+
+    .young-favourite span {
+        font-size: 27px;
+        font-weight: 900;
+    }
+
+    .favourite-intro span {
+        font-size: 16px;
+        font-weight: 900;
+
+    }
+
+    .favourite-container img {
+        width: 370px;
+    }
+
+    .download-voucher span {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 25px;
+        margin-bottom: 5%;
+    }
+
+    .download-voucher p {
+        font-size: 6px;
+        font-weight: 600;
+        margin: 10% 0;
+        color: var(--grey-color);
     }
 
 }
