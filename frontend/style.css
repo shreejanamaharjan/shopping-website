@@ -1057,6 +1057,10 @@ li span {
         transition: all 0.5s;
     }
 
+    .brand .brand-hm {
+        width: 80px;
+    }
+
     /* new arrival responsive */
     .new-arrivals span {
         font-size: 40px;
@@ -1303,9 +1307,15 @@ li span {
     }
 
     /* brand section responsive */
+    /* brand section responsive */
+
     .brand img {
-        width: 100px;
-        transition: all 2s;
+        width: 80px;
+        transition: all 0.5s;
+    }
+
+    .brand .brand-hm {
+        width: 50px;
     }
 
     /* new arrival section responsive */
@@ -1549,7 +1559,11 @@ li span {
 
     .brand img {
         width: 70px;
+        transition: all 0.5s;
+    }
 
+    .brand .brand-hm {
+        width: 45px;
     }
 
     /* /* new arrival section reponsive */
@@ -1737,6 +1751,20 @@ li span {
         width: 100px;
     }
 
+    .sidebar a {
+        display: block;
+        margin: 5% 3%;
+        font-size: 80%;
+    }
+
+    .sidebar button {
+        width: 90%;
+        font-size: 80%;
+        padding: 3%;
+        height: 80%;
+        margin: 5% 0 0 5%;
+    }
+
     /* brand section responsive */
     .brand img {
         width: 60px;
@@ -1744,6 +1772,10 @@ li span {
     }
 
     /* new arrival section reponsive */
+    .new-arrivals span {
+        font-size: 24px;
+    }
+
     .arrivals-container img {
         min-width: 200px;
 
@@ -1767,13 +1799,17 @@ li span {
     }
 
     /* young favourite section responsive */
+    .young-favourite span {
+        font-size: 24px;
+    }
+
     .favourite-container img {
-        min-width: 450px;
+        min-width: 40px;
         width: 100%;
     }
 
     .favourite-intro span {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 900;
 
     }
@@ -1786,7 +1822,7 @@ li span {
     .favourite-intro p {
         margin-top: 3%;
         color: #7F7F7F;
-        font-size: 16px;
+        font-size: 8px;
         font-weight: 500;
     }
 
@@ -1870,6 +1906,21 @@ li span {
         width: 50px;
     }
 
+    .sidebar a {
+        display: block;
+        margin: 5% 3%;
+        font-size: 50%;
+    }
+
+    .sidebar button {
+        width: 90%;
+        font-size: 50%;
+        padding: 3%;
+        height: 80%;
+        margin: 5% 0 0 5%;
+    }
+
+
     /* brand section responsive */
     .brand img {
         width: 50px;
@@ -1879,7 +1930,7 @@ li span {
     /* new arrival section responsive */
 
     .new-arrivals span {
-        font-size: 27px;
+        font-size: 20px;
         font-weight: 900;
         margin-bottom: 3%;
     }
@@ -1946,7 +1997,7 @@ li span {
 
     /* young favouite section responsive */
     .young-favourite span {
-        font-size: 27px;
+        font-size: 20px;
         font-weight: 900;
     }
 
@@ -1957,6 +2008,19 @@ li span {
 
     .favourite-container .intro-container img {
         width: 15px;
+    }
+
+    .favourite-intro span {
+        font-size: 12px;
+        font-weight: 900;
+
+    }
+
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 8px;
+        font-weight: 500;
     }
 
     /* download and voucher section responsive */
