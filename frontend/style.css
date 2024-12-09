@@ -11,6 +11,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* header section */
 header {
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@ header button {
     right: 0;
 }
 
+/* logo section */
 .logo {
     display: flex;
     align-items: center;
@@ -42,6 +44,7 @@ header button {
     letter-spacing: 3%;
 }
 
+/* navbar section */
 .navbar {
     display: flex;
     align-items: center;
@@ -72,6 +75,7 @@ nav a {
     margin-left: 25px;
 }
 
+/* sidear section */
 .sidebar {
     width: 100%;
     height: 100%;
@@ -112,6 +116,7 @@ nav a {
     margin: 5% 0 0 5%;
 }
 
+/* hero section */
 .hero {
     border-radius: 30px;
     margin: 3%;
@@ -127,6 +132,10 @@ nav a {
     position: relative;
     display: inline-block;
     z-index: 1;
+}
+
+.slogan-let {
+    width: 350px;
 }
 
 .white::before {
@@ -206,9 +215,10 @@ nav a {
     height: 100%;
 }
 
+/* brand section */
 .brand {
     background-color: #EBD96B;
-    margin: 0 0 3% 0;
+    margin: 0 0 0 0;
     padding: 5% 0;
     display: flex;
     justify-content: left;
@@ -217,15 +227,18 @@ nav a {
 }
 
 .brand img {
-    width: 170px;
+    /* min-width: 160px; */
+    width: 10%;
     object-fit: contain;
     display: block;
     margin: 0 4%;
 
 }
 
+/* new arrivals section */
 .new-arrivals {
-    margin: 5% 0 3% 3%;
+    margin: 5% 3% 3% 3%;
+
 
 }
 
@@ -239,7 +252,7 @@ nav a {
     display: flex;
     justify-content: left;
     overflow-x: auto;
-    gap: 5%;
+    gap: 3%;
     scrollbar-width: none;
 }
 
@@ -248,7 +261,8 @@ nav a {
 }
 
 .arrivals-container img {
-    width: 525px;
+    min-width: 525px;
+    width: 100%;
 }
 
 /* .arrivals-intro {
@@ -278,18 +292,21 @@ nav a {
 
 .intro-container img {
     margin-left: auto;
-    width: 35px;
+    max-width: 35px;
+    min-width: 35px;
 }
 
+/* advertise section */
 .advertise {
     background-color: #EFD24B;
     display: flex;
 }
 
 .advertise-image {
-    width: 50%;
+    width: 45%;
     margin: 3% 0 0 3%;
 }
+
 
 .advertise .intro {
     width: 35%;
@@ -342,8 +359,9 @@ nav a {
     height: 100%;
 }
 
+/* young favourite section */
 .young-favourite {
-    margin: 5% 0 3% 3%;
+    margin: 5% 3% 3% 3%;
 }
 
 .young-favourite span {
@@ -355,7 +373,7 @@ nav a {
     display: flex;
     justify-content: left;
     overflow-x: auto;
-    gap: 5%;
+    gap: 3%;
     scrollbar-width: none;
 }
 
@@ -364,11 +382,13 @@ nav a {
 }
 
 .favourite-container img {
-    width: 850px;
+    min-width: 850px;
+    width: 100%;
 }
 
 .favourite-container .intro-container img {
-    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
 }
 
 /* .arrivals-intro {
@@ -388,6 +408,7 @@ nav a {
     font-weight: 500;
 }
 
+/* download and voucher section */
 .download-voucher {
     display: flex;
     height: 100%;
@@ -405,7 +426,7 @@ nav a {
 }
 
 .download-voucher span {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 900;
     line-height: 80px;
     margin-bottom: 5%;
@@ -443,13 +464,14 @@ nav a {
     margin: 5% 0 1% 0;
 }
 
+/* contact section */
 .contact {
     background-color: #E5C643;
 }
 
 .contact .intro {
     width: 40%;
-    line-height: 40px;
+    line-height: 30px;
     margin: auto;
     padding: 5% 0;
     color: white;
@@ -457,17 +479,18 @@ nav a {
 }
 
 .contact span {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     /* font-family: 'Poppins'; */
-    line-height: 32px;
+    /* line-height: 25px; */
     margin-bottom: 5%;
 }
 
 .contact p {
     font-size: 16px;
     font-weight: 400;
-    margin: 10% 0;
+    margin: 5% 0 10% 0;
+    line-height: 15px;
 }
 
 .email-input {
@@ -496,6 +519,7 @@ nav a {
     width: 80%;
 }
 
+/* footer section */
 footer {
     background-color: black;
     color: white;
@@ -544,6 +568,8 @@ li span {
 
 /* media query */
 @media only screen and (max-width: 1120px) {
+
+    /* navbar section responsive */
     .navbar {
         display: none;
     }
@@ -557,10 +583,12 @@ li span {
         display: block;
     }
 
+    /* brand section responsve */
     .brand img {
         width: 140px;
     }
 
+    /* contact section responsive */
     .contact span {
         font-size: 20px;
         font-weight: bold;
@@ -585,6 +613,7 @@ li span {
 
     }
 
+    /* footer section responsive */
     .links {
         display: flex;
         margin-left: auto;
@@ -608,7 +637,7 @@ li span {
 
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 2500px) {
     .brand {
         overflow-x: auto;
     }
@@ -616,6 +645,89 @@ li span {
 }
 
 @media only screen and (max-width: 1820px) {
+
+    /* new arrival section reponsive */
+    .arrivals-container img {
+        min-width: 500px;
+
+    }
+
+    .intro-container img {
+        margin-left: auto;
+        max-width: 30px;
+        min-width: 30px;
+    }
+
+    /* favourite section responsive */
+    .favourite-container img {
+        min-width: 800px;
+    }
+
+    .favourite-intro span {
+        font-size: 30px;
+        font-weight: 900;
+
+    }
+
+    .favourite-container .intro-container img {
+        min-width: 30px;
+        max-width: 30px;
+    }
+
+    .favourite-intro span {
+        font-size: 35px;
+        font-weight: 900;
+
+    }
+
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* advertise section responsive */
+    .advertise span {
+        font-size: 90px;
+        font-weight: 900;
+        position: relative;
+    }
+
+
+
+    .advertise p {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 5% 0 2% 0;
+    }
+
+    .advertise h1 {
+        font-size: 26px;
+        font-weight: 900;
+        margin-top: 15%;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: -3%;
+    }
+
+
+    .advertise button {
+        width: 250px;
+        height: 80px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 26px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    /* download and voucher section responsive */
     .download-voucher span {
         font-size: 46px;
         font-weight: 900;
@@ -634,34 +746,60 @@ li span {
 
 @media only screen and (max-width: 1600px) {
 
+    /* new arrival section reponsive */
+    .arrivals-container img {
+        min-width: 450px;
+
+    }
+
+    .intro-container img {
+        margin-left: auto;
+        max-width: 30px;
+        min-width: 30px;
+    }
+
+    .new-arrivals span {
+        font-size: 48px;
+        font-weight: 900;
+        margin-bottom: 3%;
+    }
+
+    .arrivals-intro span {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .arrivals-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 18px;
+    }
+
+    /* advertise section responsive */
     .advertise span {
         font-size: 70px;
         font-weight: 900;
         position: relative;
-        transition: all 0.5s;
     }
 
 
 
     .advertise p {
-        font-size: 26px;
+        font-size: 20px;
         font-weight: 500;
         margin: 5% 0 2% 0;
-        transition: all 0.5s;
     }
 
     .advertise h1 {
         font-size: 24px;
         font-weight: 900;
         margin-top: 15%;
-        transition: all 0.5s;
     }
 
     .advertise .intro h5 {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 20px;
         margin-top: -3%;
-        transition: all 0.5s;
     }
 
 
@@ -672,12 +810,36 @@ li span {
         color: white;
         border-radius: 5px;
         border: none;
-        font-size: 24px;
+        font-size: 26px;
         margin-top: 5%;
         margin-bottom: 3%;
-        transition: all 0.5s;
     }
 
+    /* favourite section responsive */
+    .young-favourite span {
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .favourite-container img {
+        min-width: 680px;
+        width: 100%;
+    }
+
+    .favourite-intro span {
+        font-size: 28px;
+        font-weight: 900;
+
+    }
+
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* download and voucher responsive */
     .download-voucher span {
         font-size: 38px;
         font-weight: 900;
@@ -692,12 +854,29 @@ li span {
         color: var(--grey-color);
     }
 
+    /* contact section responsive */
 
+
+    .contact span {
+        font-size: 30px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        /* line-height: 25px; */
+        margin-bottom: 5%;
+        line-height: 15px;
+    }
+
+    .contact p {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 5% 0 10% 0;
+    }
 
 
 }
 
 @media only screen and (max-width: 1171px) {
+    /* hero section reponsive */
 
     .hero .slogan {
         font-size: 350%;
@@ -713,6 +892,10 @@ li span {
         transition: all 0.5s;
     }
 
+    .slogan-let {
+        width: 200px;
+    }
+
     .hero button {
         background-color: black;
         color: white;
@@ -726,6 +909,19 @@ li span {
         /* transition: all s; */
     }
 
+    /* new arrival section reponsive */
+    .arrivals-container img {
+        min-width: 400px;
+
+    }
+
+    .intro-container img {
+        margin-left: auto;
+        max-width: 30px;
+        min-width: 30px;
+    }
+
+    /* advertise section responsive */
     .advertise span {
         font-size: 60px;
         font-weight: 900;
@@ -770,8 +966,27 @@ li span {
         transition: all 0.5s;
     }
 
+    /* favourite section responsive */
     .favourite-container img {
-        width: 800px;
+        min-width: 650px;
+        width: 100%;
+    }
+
+    .favourite-container .intro-container img {
+        width: 35px;
+    }
+
+    .favourite-intro span {
+        font-size: 28px;
+        font-weight: 900;
+
+    }
+
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 20px;
+        font-weight: 500;
     }
 
     .download-voucher span {
@@ -788,10 +1003,40 @@ li span {
         color: var(--grey-color);
     }
 
+    /* contact section responsive */
+    .contact span {
+        font-size: 25px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        line-height: 15px;
+        margin-bottom: 5%;
+    }
+
+    .contact p {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 5% 0 10% 0;
+    }
 }
 
 @media only screen and (max-width: 935px) {
 
+    /* navbar section responsive */
+    header .logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .logo span {
+        font-size: 180%;
+    }
+
+    .menu img {
+        width: 30px;
+
+    }
+
+    /* hero section responsive */
     .hero button {
         background-color: black;
         color: white;
@@ -805,11 +1050,14 @@ li span {
         /* transition: all 1s; */
     }
 
+    /* brand section responsive */
+
     .brand img {
         width: 100px;
         transition: all 0.5s;
     }
 
+    /* new arrival responsive */
     .new-arrivals span {
         font-size: 40px;
         font-weight: 900;
@@ -817,12 +1065,18 @@ li span {
     }
 
     .arrivals-container img {
-        width: 500px;
+        min-width: 370px;
     }
 
     .arrivals-intro span {
         font-size: 27px;
         font-weight: 900;
+    }
+
+    .intro-container img {
+        margin-left: auto;
+        max-width: 25px;
+        min-width: 25px;
     }
 
     .arrivals-intro p {
@@ -831,14 +1085,9 @@ li span {
         font-size: 16px;
     }
 
-
-    .intro-container img {
-        margin-left: auto;
-        width: 25px;
-    }
-
+    /* advertise section responsive */
     .advertise span {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 900;
         position: relative;
         transition: all 0.5s;
@@ -847,7 +1096,7 @@ li span {
 
 
     .advertise p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         margin: 5% 0 2% 0;
         transition: all 0.5s;
@@ -858,6 +1107,12 @@ li span {
         font-weight: 900;
         margin-top: 15%;
         transition: all 0.5s;
+    }
+
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: -3%;
     }
 
 
@@ -874,27 +1129,59 @@ li span {
         transition: all 0.5s;
     }
 
+    /* young favourite section responsive */
     .young-favourite span {
         font-size: 40px;
         font-weight: 900;
     }
 
+    .favourite-container img {
+        min-width: 600px;
+        width: 100%;
+    }
+
+    .favourite-container .intro-container img {
+        min-width: 25px;
+        max-width: 25px;
+    }
+
     .favourite-intro span {
-        font-size: 16px;
+        font-size: 25px;
         font-weight: 900;
 
     }
 
-    .favourite-container img {
-        width: 700px;
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    /* dounload and voucher section responsive */
+
+    .download-voucher button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 3%;
+        margin: 10% 0;
     }
 
     .download-voucher {
         margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .download-voucher .intro {
+        width: 50%;
+        margin: auto;
+        height: 100%;
     }
 
     .download-voucher span {
-        font-size: 33px;
+        text-align: center;
+        font-size: 40px;
         font-weight: 900;
         line-height: 40px;
         margin-bottom: 5%;
@@ -911,22 +1198,26 @@ li span {
         display: none;
     }
 
-    .email-input {
-        background-color: white;
-        width: 80%;
-        padding: 2%;
-        border-radius: 5px;
-        margin: auto;
-        display: flex;
-
+    .download-button {
+        justify-content: center;
     }
 
-
-    .email-input input {
-        border: none;
-        font-size: 16px;
+    /* contact section responsive */
+    .contact span {
+        font-size: 20px;
+        font-weight: bold;
+        /* font-family: 'Poppins'; */
+        line-height: 15px;
+        margin-bottom: 10%;
     }
 
+    .contact p {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 5% 0 10% 0;
+    }
+
+    /* footer section responsive */
     footer {
         background-color: black;
         color: white;
@@ -935,8 +1226,8 @@ li span {
     }
 
     footer span {
-        font-size: 28px;
-        font-weight: 900;
+        font-size: 24px;
+        font-weight: 600;
         line-height: 0;
         margin-bottom: 0;
     }
@@ -954,30 +1245,24 @@ li span {
 
     .links {
         display: block;
-        /* margin-left: -7%; */
         gap: 0;
         width: 100%;
         margin-top: 3%;
     }
 
-    .links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .links ul li {
-        list-style: none;
-    }
-
     li {
         color: #8E8E8E;
-        margin: 1.5% 0;
+        margin: 1% 0;
     }
 
     li span {
         color: white;
         font-size: 16px;
+    }
+
+    ul {
+        margin: 2% 0;
+        padding: 0;
     }
 
 
@@ -986,6 +1271,7 @@ li span {
 
 @media only screen and (max-width: 865px) {
 
+    /* hero section responsive */
     .hero .slogan {
         font-size: 250%;
         font-weight: 900;
@@ -1012,11 +1298,17 @@ li span {
         margin-top: 10% 0;
     }
 
+    .slogan-let {
+        width: 150px;
+    }
+
+    /* brand section responsive */
     .brand img {
         width: 100px;
         transition: all 2s;
     }
 
+    /* new arrival section responsive */
     .new-arrivals span {
         font-size: 36px;
         font-weight: 900;
@@ -1024,7 +1316,7 @@ li span {
     }
 
     .arrivals-container img {
-        width: 400px;
+        min-width: 340px;
     }
 
     .arrivals-intro span {
@@ -1038,35 +1330,41 @@ li span {
         font-size: 14px;
     }
 
-
     .intro-container img {
         margin-left: auto;
-        width: 25px;
+        max-width: 25px;
+        min-width: 25px;
     }
 
+    /* advertise section responsive */
     .advertise span {
-        font-size: 38px;
+        font-size: 25px;
         font-weight: 900;
         position: relative;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
 
 
     .advertise p {
-        font-size: 16px;
+        font-size: 10px;
         font-weight: 500;
         margin: 5% 0 2% 0;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
     .advertise h1 {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 900;
         margin-top: 15%;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
+    .advertise .intro h5 {
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: -3%;
+    }
 
     .advertise button {
         width: 150px;
@@ -1078,44 +1376,66 @@ li span {
         font-size: 16px;
         margin-top: 5%;
         margin-bottom: 3%;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
+    /* youngs favourite section responsive */
     .young-favourite span {
         font-size: 36px;
         font-weight: 900;
     }
 
+    .favourite-container img {
+        min-width: 580px;
+        width: 100%;
+    }
+
     .favourite-intro span {
-        font-size: 16px;
+        font-size: 25px;
         font-weight: 900;
 
     }
 
-    .favourite-container img {
-        width: 650px;
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 18px;
+        font-weight: 500;
     }
+
+    /* dounload and voucher section responsive */
+
 
     .download-voucher span {
-        font-size: 26px;
+        text-align: center;
+        font-size: 36px;
         font-weight: 900;
-        line-height: 35px;
+        line-height: 40px;
         margin-bottom: 5%;
     }
 
     .download-voucher p {
+        text-align: center;
         font-size: 14px;
         font-weight: 600;
         margin: 10% 0;
         color: var(--grey-color);
     }
 
+    .download-voucher .download {
+        display: none;
+    }
 
+    .download-button {
+        justify-content: center;
+    }
+
+    /* contact section responsive */
     .contact span {
         font-size: 18px;
         font-weight: bold;
         /* font-family: 'Poppins'; */
-        line-height: 24px;
+        line-height: 10px;
         margin-bottom: 5%;
     }
 
@@ -1143,10 +1463,12 @@ li span {
 
     }
 
+    /* dounload and voucher section responsive */
     .download-voucher span {
-        font-size: 20px;
+        text-align: center;
+        font-size: 28px;
         font-weight: 900;
-        line-height: 35px;
+        line-height: 40px;
         margin-bottom: 5%;
     }
 
@@ -1157,21 +1479,28 @@ li span {
         color: var(--grey-color);
     }
 
+    .download-voucher .download {
+        display: none;
+    }
+
+    /* contact section responsive */
+
     .contact span {
         font-size: 16px;
         font-weight: bold;
         /* font-family: 'Poppins'; */
-        line-height: 20px;
+        line-height: 5px;
         margin-bottom: 5%;
     }
 
     .contact p {
         font-size: 10px;
         font-weight: 400;
-        margin: 10% 0;
+        margin: 5% 0 5% 0;
+        line-height: 15px;
     }
 
-    .email-input {
+    /* .email-input {
         background-color: white;
         width: 120%;
         padding: 2%;
@@ -1179,12 +1508,13 @@ li span {
         margin: auto;
         display: flex;
 
-    }
+    } */
 
 }
 
 @media only screen and (max-width: 600px) {
 
+    /* hero section responsive */
     .hero .slogan {
         font-size: 200%;
         font-weight: 900;
@@ -1211,9 +1541,27 @@ li span {
         margin-top: 10% 0;
     }
 
+    .slogan-let {
+        width: 110px;
+    }
+
+    /* brand section responsive */
+
     .brand img {
         width: 70px;
 
+    }
+
+    /* /* new arrival section reponsive */
+    .arrivals-container img {
+        min-width: 300px;
+
+    }
+
+    .intro-container img {
+        margin-left: auto;
+        max-width: 20px;
+        min-width: 20px;
     }
 
     .new-arrivals span {
@@ -1222,66 +1570,93 @@ li span {
         margin-bottom: 3%;
     }
 
+    .arrivals-intro span {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .arrivals-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 12px;
+    }
+
+    /* advertise section responsive */
     .advertise span {
-        font-size: 33px;
+        font-size: 15px;
         font-weight: 900;
         position: relative;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
 
 
     .advertise p {
-        font-size: 14px;
+        font-size: 8px;
         font-weight: 500;
         margin: 5% 0 2% 0;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
     .advertise h1 {
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 900;
         margin-top: 15%;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
     .advertise .intro h5 {
         font-weight: 400;
-        font-size: 12px;
+        font-size: 8px;
         margin-top: -3%;
-        transition: all 2s;
     }
+
 
     .advertise button {
         width: 100px;
-        height: 40px;
+        height: 50px;
         background-color: black;
         color: white;
         border-radius: 5px;
         border: none;
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 5%;
         margin-bottom: 3%;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
+    /* youngs favourite section responsive */
     .young-favourite span {
         font-size: 34px;
         font-weight: 900;
     }
 
+    .favourite-container img {
+        min-width: 500px;
+        width: 100%;
+    }
+
+    .favourite-container .intro-container img {
+        width: 30px;
+    }
+
+
     .favourite-intro span {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 900;
 
     }
 
-    .favourite-container img {
-        width: 600px;
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 16px;
+        font-weight: 500;
     }
 
+    /* download and voucher section reponsive */
     .download-voucher span {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 900;
         line-height: 30px;
         margin-bottom: 5%;
@@ -1294,11 +1669,12 @@ li span {
         color: var(--grey-color);
     }
 
+    /* conatct section responsive */
     .contact span {
         font-size: 12px;
         font-weight: bold;
         /* font-family: 'Poppins'; */
-        line-height: 14px;
+        line-height: 5px;
         margin-bottom: 5%;
     }
 
@@ -1306,6 +1682,7 @@ li span {
         font-size: 8px;
         font-weight: 400;
         margin: 10% 0;
+        line-height: 15px;
     }
 
     .email-input {
@@ -1329,6 +1706,7 @@ li span {
 
 @media only screen and (max-width: 500px) {
 
+    /* hero secton repsonsive */
     .hero .slogan {
         font-size: 150%;
         font-weight: 900;
@@ -1355,75 +1733,64 @@ li span {
         margin-top: 10% 0;
     }
 
+    .slogan-let {
+        width: 100px;
+    }
+
+    /* brand section responsive */
     .brand img {
         width: 60px;
 
     }
 
-    .new-arrivals span {
-        font-size: 30px;
-        font-weight: 900;
-        margin-bottom: 3%;
+    /* new arrival section reponsive */
+    .arrivals-container img {
+        min-width: 200px;
+
     }
 
-    .advertise span {
-        font-size: 27px;
-        font-weight: 900;
-        position: relative;
-        transition: all 2s;
+    .intro-container img {
+        margin-left: auto;
+        max-width: 20px;
+        min-width: 20px;
     }
 
-
-
-    .advertise p {
-        font-size: 10px;
-        font-weight: 500;
-        margin: 5% 0 2% 0;
-        transition: all 2s;
-    }
-
-    .advertise h1 {
-        font-size: 14px;
-        font-weight: 900;
-        margin-top: 15%;
-        transition: all 2s;
-    }
-
-    .advertise .intro h5 {
-        font-weight: 400;
+    .arrivals-intro span {
         font-size: 12px;
-        margin-top: -3%;
-        transition: all 2s;
-    }
-
-    .advertise button {
-        width: 100px;
-        height: 40px;
-        background-color: black;
-        color: white;
-        border-radius: 5px;
-        border: none;
-        font-size: 14px;
-        margin-top: 5%;
-        margin-bottom: 3%;
-        transition: all 2s;
-    }
-
-    .young-favourite span {
-        font-size: 30px;
         font-weight: 900;
+    }
+
+    .arrivals-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 8px;
+    }
+
+    /* young favourite section responsive */
+    .favourite-container img {
+        min-width: 450px;
+        width: 100%;
     }
 
     .favourite-intro span {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 900;
 
     }
 
-    .favourite-container img {
-        width: 635px;
+    .favourite-container .intro-container img {
+        min-width: 20px;
+        max-width: 20px;
     }
 
+    .favourite-intro p {
+        margin-top: 3%;
+        color: #7F7F7F;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* download and voucher section responsive */
     .download-voucher span {
         font-size: 18px;
         font-weight: 900;
@@ -1450,6 +1817,21 @@ li span {
 }
 
 @media only screen and (max-width: 400px) {
+
+    /* navbar section responsive */
+    header .logo img {
+        width: 15px;
+        height: 15px;
+    }
+
+    header .logo span {
+        font-size: 120%;
+    }
+
+    .menu img {
+        width: 20px;
+
+    }
 
     .hero .slogan {
         font-size: 100%;
@@ -1484,16 +1866,17 @@ li span {
         height: 100%;
     }
 
+    .slogan-let {
+        width: 50px;
+    }
+
+    /* brand section responsive */
     .brand img {
         width: 50px;
         transition: all 2s;
     }
 
-    .new-arrivals span {
-        font-size: 28px;
-        font-weight: 900;
-        margin-bottom: 3%;
-    }
+    /* new arrival section responsive */
 
     .new-arrivals span {
         font-size: 27px;
@@ -1502,19 +1885,14 @@ li span {
     }
 
     .arrivals-container img {
-        width: 300px;
+        width: 200px;
     }
 
     .arrivals-intro span {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 900;
     }
 
-    .arrivals-intro p {
-        margin-top: 3%;
-        color: #7F7F7F;
-        font-size: 16px;
-    }
 
 
     .intro-container img {
@@ -1522,64 +1900,66 @@ li span {
         width: 20px;
     }
 
+    /* advertise section responsive */
     .advertise span {
-        font-size: 25px;
+        font-size: 12px;
         font-weight: 900;
         position: relative;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
 
 
     .advertise p {
-        font-size: 9px;
+        font-size: 5px;
         font-weight: 500;
         margin: 5% 0 2% 0;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
     .advertise h1 {
-        font-size: 12px;
+        font-size: 9px;
         font-weight: 900;
         margin-top: 15%;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
     .advertise .intro h5 {
         font-weight: 400;
         font-size: 8px;
         margin-top: -3%;
-        transition: all 2s;
     }
 
+
     .advertise button {
-        width: 80px;
-        height: 40px;
+        width: 100px;
+        height: 50px;
         background-color: black;
         color: white;
         border-radius: 5px;
         border: none;
-        font-size: 12px;
+        font-size: 10px;
         margin-top: 5%;
         margin-bottom: 3%;
-        transition: all 2s;
+        transition: all 0.5s;
     }
 
+    /* young favouite section responsive */
     .young-favourite span {
         font-size: 27px;
         font-weight: 900;
     }
 
-    .favourite-intro span {
-        font-size: 16px;
-        font-weight: 900;
-
-    }
-
     .favourite-container img {
-        width: 370px;
+        min-width: 300px;
+        width: 100%;
     }
 
+    .favourite-container .intro-container img {
+        width: 15px;
+    }
+
+    /* download and voucher section responsive */
     .download-voucher span {
         font-size: 18px;
         font-weight: 900;
