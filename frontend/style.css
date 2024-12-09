@@ -1139,6 +1139,11 @@ li span {
 }
 
 @media only screen and (max-width: 780px) {
+    .brand img {
+        width: 90px;
+
+    }
+
     .download-voucher span {
         font-size: 20px;
         font-weight: 900;
@@ -1205,6 +1210,11 @@ li span {
         border: none;
         padding: 3%;
         margin-top: 10% 0;
+    }
+
+    .brand img {
+        width: 70px;
+
     }
 
     .new-arrivals span {
@@ -1346,6 +1356,11 @@ li span {
         margin-top: 10% 0;
     }
 
+    .brand img {
+        width: 60px;
+
+    }
+
     .new-arrivals span {
         font-size: 30px;
         font-weight: 900;
@@ -1471,7 +1486,7 @@ li span {
     }
 
     .brand img {
-        width: 100px;
+        width: 50px;
         transition: all 2s;
     }
 
